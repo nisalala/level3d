@@ -1,0 +1,11 @@
+.hero-section {
+    /* background: url("https://source.unsplash.com/1600x900/?space,galaxy") no-repeat center center/cover; */
+    padding: 100px 0;
+    color: white;
+  }
+  
+  .highlight {
+    color: violet;
+    font-weight: bold;
+  }
+  

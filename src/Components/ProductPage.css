@@ -1,0 +1,193 @@
+/* General Styling */
+.product-page {
+    background-color: #0d0d16; /* Dark background */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    padding-bottom: 50px; /* Prevent footer from sticking to content */
+  }
+  
+  /* Scrollable Sections */
+  .category-section {
+    margin: 30px 0;
+  }
+  
+  .category-section h2 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+  }
+  
+  /* Product Card Styling */
+  .product-card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+
+  /* Scrollable Swiper Styling */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category-swiper {
+    padding: 10px 0;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #111;
+    color: white;
+    margin-top: 50px;
+  }
+  
+
+  .swipable-section {
+   
+    margin: 0rem 2.5rem;
+  }
+  
+  .section2-title {
+    font-size: 36px;
+    margin: 1rem 0rem;
+    color: white;
+  }
+
+  .navsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+  
+  .swipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+  }
+  
+  .items-wrapper {
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .card {
+    pointer-events: auto;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 25px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 255, 255);
+    position: relative; /* So the cart button can be positioned inside */
+  transition: transform 0.3s ease-in-out; /* Smooth animation */
+
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* Make card rise on hover */
+  }
+  
+  /* Cart button styling */
+  .cart-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 20px;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+  }
+  
+  .cart-button:hover {
+    background-color: #000000;
+  }
+  
+  /* Show the cart button when the card is hovered */
+  .card:hover .cart-button {
+    display: block;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card-details {
+    margin-top: 10px;
+  }
+  
+  .card-title {
+    font-size: 26px;
+    margin: 10px;
+    text-align: left;
+  }
+  .purchasebottom{
+    margin-top: 2rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .card-price {
+    font-size: 16px;
+    color: #4caf50;
+  }
+  
+  .card-discount {
+    font-size: 14px;
+    color: #ff5252;
+  }
+  
+  .ppurchase-button {
+    background-color: #55B4CA;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  .pnav-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+  
+  .pnav-button:hover {
+    color: #4caf50;
+  }

@@ -1,0 +1,17 @@
+.footer {
+ /* Makes it overlap content */
+    bottom: 0; /* You can adjust this if you want to position it in a different location */
+    left: 0;
+    width: 100%;
+    background-color: #343a40; /* Dark background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    z-index: 9999; /* Make sure the footer stays on top */
+  }
+  
+/*   
+  body {
+    padding-bottom: 50px; Add padding to prevent content from being hidden behind the footer
+  } */
+  

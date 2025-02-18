@@ -1,0 +1,14 @@
+.product-card {
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  

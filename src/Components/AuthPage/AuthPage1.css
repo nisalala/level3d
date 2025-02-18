@@ -1,0 +1,83 @@
+body{
+    font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.auth-page {
+    display: flex;
+  }
+  
+  .video-container {
+    overflow: hidden;
+  }
+  
+  .form-container {
+    background-color: rgb(2, 3, 8);
+
+    /* background: linear-gradient(to bottom, #000000, #002051); */
+}
+.btn{
+background-color: #52cfff;
+border-radius: 0;
+margin-top: 1rem;
+/* border-bottom: 5px solid cyan; */
+}
+
+.btn:hover{
+  background-color: #0050ef;
+  color: white;
+}
+  
+.welcome h1{
+  font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: #0050ef;
+  font-size: 5rem;
+  margin-top: -2rem;
+}
+
+p{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.welcome {
+    
+    margin-bottom: 4rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(134, 133, 133);
+    font-size: 2.5rem;
+  }
+  .tab-btn.active {
+    text-decoration: dotted underline;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  form{
+    height: 385px;
+  }
+
+  form label{
+    color: #ffffff;
+  }
+
+  .input-border {
+border-radius: 0;
+border-bottom: 0.3rem solid #52cfff;
+  }

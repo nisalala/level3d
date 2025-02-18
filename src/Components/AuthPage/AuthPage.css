@@ -1,0 +1,161 @@
+/* General Styling */
+
+
+.auth-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: auto; /* Enables scrolling if needed */
+  }
+  
+  /* Background Video */
+  .background-video {
+    position: fixed; /* Ensures it stays fixed in place */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ensures full width */
+    height: 100vh; /* Ensures full height */
+    object-fit: cover; /* Prevents distortion */
+    z-index: -2;
+  }
+  
+ 
+  
+  /* Authentication Box */
+  .auth-box {
+    font-family: "Handjet", serif;
+    padding: 2rem;
+    text-align: center;
+
+    /* Fix height expansion issue */
+  position: absolute;
+  top: 20%; /* Start near the top */
+  left: 50%;
+  transform: translateX(-50%); /* Only center horizontally */
+  max-width: 40%; /* Limit width */
+  width: 90%; /* Make it responsive */
+  min-height: 300px; /* Set a minimum height */
+  }
+  
+  /* Heading */
+  .auth-box h1 {
+   
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  
+  /* Login/Signup Toggle */
+  .auth-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .auth-toggle button {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(134, 133, 133);
+    font-size: 2.5rem; 
+    font-weight: 600;  
+}
+  
+  .auth-toggle button.active {
+    text-decoration: dotted underline;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  /* Form Styling */
+  .AuthForm {
+    display: flex;
+    flex-direction: column;
+    height: px;
+  }
+
+  
+  .AuthInput {
+    background: #ffffff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5rem;
+  }
+  
+  .AuthBtn {
+    background: #4C77AC;
+    padding: 0.8rem;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  .AuthBtn:hover {
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #00387b;
+  }
+  
+  /* Terms Checkbox */
+  .terms {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .terms input {
+    width: auto;
+    margin: 0.5rem;
+    vertical-align: middle;
+    
+  }
+
+  .terms label{
+    margin: 0.5rem;
+  }
+  
+  .underline {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* OR Text */
+  .or-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  .icon.google:hover {
+    color: red;
+  }
+  
+  .icon.facebook:hover {
+    color: blue;
+  }
+  

@@ -1,0 +1,193 @@
+/* About Us Page - Fullscreen Background */
+body{
+  font-family: "Handjet", serif;
+}
+
+.font1 {
+    font-family: "Handjet", serif;
+    font-size: 60px;
+    color: #B3ECFF;
+  }
+  
+  .font2 {
+    font-family: "Press Start 2P", serif;
+    font-size: 60px;
+    color: #7035FA;
+  }
+
+  p{
+    font-family: "Pixelify Sans";
+  }
+
+  .welcome{
+    position: relative;
+    width: 55%;
+    margin-top: 13rem;
+    margin-left: 3rem;
+  }
+
+  .about-container {
+    height: 3572px;
+    background: url("./Assets/FinalBg.png") no-repeat center center;
+    color: white;
+    min-height: 100vh; /* Use min-height for responsive height */
+    padding: 20px; /* Add padding to avoid content touching edges */
+    margin: 0; /* Optional: Remove margin if it's affecting layout */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center center; /* Center the background image */
+    
+  }
+  
+  
+  /* Content Box Styling */
+  .about-content {
+    position: absolute;
+    margin-top: 40rem;
+    max-width: 60%;
+    padding: 8rem 0rem;
+    left: 20%
+  }
+  
+  /* Headings */
+  .about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: "Handjet", serif;
+    color: #5FCEE6;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .welcome p {
+    font-size: 1.4rem;
+  }
+  
+  .about-btn{
+    font-family: "Gluten", serif;
+    background-color: #5587A9;
+    border-radius: 50px;
+    padding: 7px 27px;
+    font-size: 24px;
+    border: none;
+  }
+
+  .about-btn:hover{
+    background-color: #013c63;
+    color: white;
+  }
+
+  .contact-section {
+    position: absolute;
+    margin-top: 120rem;
+    padding-top: 6rem;
+    left: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+  }
+
+  .contact-section h2{
+    font-family: "Handjet", serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #5FCEE6;
+  }
+
+  .contact-section p{
+    font-family: "Pixelify Sans";
+    font-size: 24px;
+  }
+
+  .contact-section h1{
+    font-family: "Handjet", serif;
+    color: white;
+    left: 0;
+    font-size: 60px;
+
+  }
+
+  .contact-form{
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 1rem;
+    border-radius: 24px;
+  }
+
+  .contact-form form{
+    width: 100%;
+    padding: 2rem;
+  }
+
+.input-field {
+  font-family: "Handjet", serif;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: white;
+  outline: none;
+  font-size: 32px;
+  opacity: 75%;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-section button {
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 26px;
+  background-color: #2BA7FF;
+  border: none;
+  padding: 0.2rem 5rem;
+  margin-left: 35%;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-section button:hover {
+  background-color: #103f60 !important;
+  color: white;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 42px;
+}
+
+.social-icons i {
+  cursor: pointer;
+  color: #fff; /* Adjust color as needed */
+  transition: 0.3s;
+color: #73FBFD;
+}
+
+.social-icons i:hover {
+  color: #4A90E2; /* Change on hover */
+}
+
+.about-footer{
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-footer p{
+  margin-top: 1.5rem;
+}

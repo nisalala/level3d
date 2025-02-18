@@ -1,0 +1,580 @@
+*{
+  font-family: Handjet;
+}
+
+button {
+  pointer-events: auto !important;
+}
+
+#root {
+  pointer-events: none;
+}
+
+.productbgimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 770px;
+    z-index: -5;
+    background-color: transparent;
+}
+
+.product-detail {
+    position: relative;
+   background-color: #090915;
+    color: white;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+    z-index: -2;
+  }
+
+  
+  .navbar-dark {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .product-showcase {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .game-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    
+  }
+
+  .game-title {
+
+    font-family: "The Girl Next Door", serif;
+    font-size: 94px;
+  margin-bottom: -3rem;
+  -webkit-text-stroke: 1px #090915;
+  }
+
+  .game-banner h2{
+    font-family: "The Girl Next Door", serif;
+    font-size: 300px;
+   -webkit-text-stroke: 1px #090915;
+   margin-bottom: -3rem;
+  }
+  
+  .game-price {
+    font-family: "The Girl Next Door", serif;
+    font-size: 6rem;
+    color: #BC7525;
+    margin-bottom: -2rem;
+    z-index: 1;
+  }
+  
+  
+  .product-description {
+    position: relative;
+    font-family: handjet;
+    background-image: linear-gradient(#1A1D26, #28313C);
+    margin-top: -3.5rem;
+    padding: 20px 0px;
+    text-align: right;
+    padding-bottom: 2rem;
+  }
+  
+
+.WuCharacter{
+    position: absolute;
+    top: -10rem;
+    height: 700px;
+    width: auto;
+    left: 27%;
+    z-index: 10;
+}
+
+.purchase-button1 {
+  position: relative;
+  z-index: 100;
+  pointer-events: auto !important;
+    font-family: handjet;
+    background-color: #47261E;
+    color: white;
+    border: 1px solid white;
+    margin-top: 0;
+    margin-left: 20rem;
+    font-weight: 400;
+    font-size: 24px;
+  border-radius: 26px;
+  padding: 0.2rem 3rem;
+  transition: background-color 0.3s ease-in-out;
+}
+.purchase-button1:hover{
+  background-color: #8a4c3d;
+  color: #ffffff;
+}
+.wu2{
+    position: absolute;
+    left: 0;
+    top: -5rem;
+    height: 1300px;
+
+}
+
+.description-text{
+    margin-top: 3rem;
+    margin-right: 5rem;
+    width: 70%;
+    margin-left: 25%;
+    background-color: transparent;
+}
+
+.description-text h2{
+    font-size: 60px;
+}
+
+.description-text h3{
+    font-size: 44px;
+}
+
+.description-text p{
+    font-size: 28px;
+    opacity: 75%;
+}
+
+.upper{
+    opacity: 100% !important;
+}
+
+
+.gallery-container {
+    text-align: center;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .main-image img {
+    padding: 5px;
+    position: relative;
+    width: 70%;
+    height: 500px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: 25%;
+    z-index: 11;
+  }
+  
+  .thumbnail-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    width: 72%;
+    left: 26%;
+
+  }
+  
+  .thumbnail-wrapper {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; /* Prevents extra images from appearing */
+    width: 100%; /* Adjust this based on your design */
+  
+  }
+  
+  .thumbnail {
+    width: 190px;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.6;
+    
+  }
+  
+  .thumbnail.active,
+  .thumbnail:hover {
+    opacity: 1;
+    border: 2px solid white;
+  }
+  
+  .nav-button {
+    background: transparent;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0px 10px;
+    border-radius: 64px;
+    margin: 1rem;
+  }
+  
+  .nav-button:active {
+    transform: scale(0.95);
+  }
+  
+
+  /* RATINGGSSS------------------ */
+
+
+  /* General page styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Fullscreen background with a dark overlay */
+.background-container {
+  background-image: url('./Assets/StarBg.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: handjet;
+}
+
+.overlay {
+  width: 100%;
+  background-color: transparent;
+  padding: 0rem 5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainratings{
+  padding:6rem 0rem ;
+}
+
+.sideratings{
+  padding: 6rem 0rem;
+  width: 50%;
+}
+
+/* Rating display */
+
+.star-image {
+  width: 80px; /* Set to desired size */
+  height: 80px;
+}
+.star-image2 {
+  width: 40px; /* Set to desired size */
+  height: 40px;
+}
+
+.rating-title {
+  display: flex;
+  align-items: center;
+  font-size: 150px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.rating-fraction {
+  font-size: 110px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: 3rem;
+  opacity: 50%;
+}
+
+/* Star icons */
+.stars {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.star {
+  color: #FFD700;
+}
+
+.star.gray {
+  color: #555;
+}
+
+/* Rating count text */
+.rating-count {
+  font-weight: 400;
+  margin-top: 3rem;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Rating breakdown */
+.rating-breakdown {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.rating-label {
+  width: 40px;
+  font-size: 1rem;
+  color: #FFD700;
+}
+
+.rating-bar-container {
+  background-color: #333;
+  height: 2rem;
+  border-radius: 25px;
+  flex-grow: 1;
+  margin: 0 10px;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.rating-bar {
+  background-color: #C7913C;
+  height: 2rem;
+  border-radius: 25px;
+}
+
+.rating-count-small {
+  font-size: 36px;
+  white-space: nowrap;
+}
+
+
+
+/* REVIEW------------------------- */
+
+/* Background styling */
+.review-page {
+  background: url('./Assets/ReviewBg.png') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  color: white;
+  font-size: 46px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-left: -70%;
+}
+
+/* Review card */
+.review-card {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 10px;
+  width: 90%;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.middlereview{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+/* Review header */
+.review-header {
+  padding: 2rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+.username {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+/* Review content */
+.review-content {
+  margin-top: 5%;
+  white-space: pre-line;
+  font-size: 24px;
+}
+
+/* Review footer */
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  opacity: 75%;
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.review-actions {
+  display: flex;
+  align-items: center;
+}
+
+.rvwbtn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+  border-radius: 16px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.2s;
+}
+.like{
+  width: 30px;
+}
+.dislike{
+  width: 35px;
+}
+
+.btn:hover {
+  color: #ddd;
+}
+
+/* YOU MAY ALSO LIKE */
+
+/* Section styling */
+.similar-products-section {
+  background: transparent;
+  padding: 40px 0;
+  text-align: center;
+  
+}
+
+/* Section title */
+.section-title {
+  color: white;
+  font-size: 46px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-left: -70%;
+}
+
+/* Product container */
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Product card */
+.product-card {
+  position: relative;
+  width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  background-color: transparent;
+  
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Product image */
+.product-image {
+  width: 100%;
+  display: block;
+}
+
+/* Product overlay */
+.product-overlay {
+  position: absolute;
+  margin-bottom: 1.1rem;
+  margin-left: 2.5px;
+  bottom: 0;
+  width: 92%;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  pointer-events: none;
+}
+
+/* Product title */
+.product-title {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* Pricing */
+.product-pricing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.new-price {
+  color: #4caf50;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.old-price {
+  color: gray;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+/* Discount badge */
+.discount-badge {
+  background: #1D3164;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 13px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Purchase button */
+.purchase-btn {
+  pointer-events: auto !important;
+  background: #55B4CA;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-top: 8px;
+  position: relative;
+    z-index: 100;
+}
+
+.purchase-btn:hover {
+  background: #3b7d8c;
+}
+
+.purchase-btn .purchase-button1{
+  display: inline-block;
+  padding: 10px 15px;
+  width: auto;
+  min-width: 100px;
+  height: auto;
+  z-index: 5;
+}

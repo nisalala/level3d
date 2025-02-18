@@ -1,0 +1,95 @@
+
+
+.featured-section {
+  font-family: "Handjet", serif;
+  padding: 0px 20px;
+  /* background-color: red; */
+  color: white;
+  text-align: center;
+  width: 98%;
+  margin-left: 1%;
+}
+
+.featured-section h2{
+position: absolute;
+padding-top: 2.5rem;
+font-size: 3rem;
+}
+
+.featured-item {
+  position: relative;
+  font-family: "Handjet", serif;
+  /* border: 2px solid blue; */
+  padding-bottom: 3rem;
+  padding-top: 8rem;
+}
+
+.featured-image {
+
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* border: 2px solid green; */
+}
+
+.featured-info {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  color: white;
+  text-align: left;
+  /* border: 2px solid rgb(255, 148, 255); */
+}
+
+.purchase-button {
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 26px;
+  background-color: #008EC1;
+  border: none;
+  padding: 0.2rem 3rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.purchase-button:hover {
+  background-color: #103f60 !important;
+  color: white;
+  align-items: center;
+}
+
+/* Change the position of the dots */
+.slick-dots {
+  bottom: 5rem; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for each dot */
+.slick-dots li button:before {
+  font-size: 12px; /* Change size */
+  color: #ccc; /* Default dot color */
+  opacity: 1; /* Make dots fully visible */
+  transition: all 0.3s ease;
+}
+
+/* Active dot style */
+.slick-dots li.slick-active button:before {
+  color: #f39c12; /* Change to desired active color */
+  font-size: 14px; /* Change size if needed */
+}
+
+/* Ensure only the character image is allowed to overflow */
+.character-image {
+  position: absolute; /* Use absolute positioning */
+  height: 39rem;
+  z-index: 999;
+  top: -140%; /* Adjust to control positioning */
+  right: 88%; /* Center horizontally relative to parent */
+  transform: translateX(-50%); /* Center alignment */
+  pointer-events: none; /* Prevent interactions if necessary */
+}
+
+
+/* .slick-list {
+  overflow: visible !important; /* Ensure the overflow is not hidden */
+ 
