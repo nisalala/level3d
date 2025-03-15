@@ -172,7 +172,7 @@ const ProductDetail = () => {
   const navigate = useNavigate();
 
   return (
-    <div className={`product-detail`}>
+    <div>
       
       <SearchAndCart />
 

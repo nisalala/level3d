@@ -2,14 +2,6 @@
   font-family: Handjet;
 }
 
-button {
-  pointer-events: auto !important;
-}
-
-#root {
-  pointer-events: none;
-}
-
 .productbgimg{
     position: absolute;
     top: 0;
@@ -20,16 +12,6 @@ button {
     background-color: transparent;
 }
 
-.product-detail {
-    position: relative;
-   background-color: #090915;
-    color: white;
-    font-family: sans-serif;
-    padding-bottom: 50px;
-    z-index: -2;
-  }
-
-  
   .navbar-dark {
     background: rgba(0, 0, 0, 0.8);
   }
@@ -455,7 +437,10 @@ body, html {
 
 /* Section styling */
 .similar-products-section {
-  background: transparent;
+
+   background-color: #090915;
+    color: white;
+    font-family: sans-serif;
   padding: 40px 0;
   text-align: center;
   

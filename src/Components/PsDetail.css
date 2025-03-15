@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ps{
+    /* main ps image png */
+    position: absolute;
+    top: -10rem;
+    height: 700px;
+    width: auto;
+    right: 5%;
+    z-index: 10;
+}
+
+.ps-banner {
+    /* whole front text ko css */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 7rem;
+    margin-top: 5rem;
+    
+  }
+
+  .ps-banner h2{
+    font-family: "The Girl Next Door", serif;
+    font-size: 300px;
+   -webkit-text-stroke: 1px #090915;
+   margin-bottom: -3rem;
+  }
+
+  .cart{
+    margin-top: 2rem;
+    width: 52px;
+  }
+
+  .ps-purchase-button {
+    cursor: pointer;
+    position: relative;
+    width: 330px;
+      font-family: handjet;
+      background-color: #47261E;
+      color: white;
+      border: 1px solid white;
+      margin:1rem 0rem;
+      font-weight: 400;
+      font-size: 24px;
+    border-radius: 26px;
+    padding: 0.2rem 3rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .ps-purchase-button:hover{
+    background-color: #8a4c3d;
+    color: #ffffff;
+  }
+
+  .pslogo{
+    width: 650px;
+    height: auto;
+    padding-bottom: 9rem;
+    /* ps logo ko position is alikati agadi than all text so */
+    margin-left: -4rem;
+  }
+
+  .cart:hover {
+    transform: scale(1.15);
+  }
+
+  .ps2{
+    position: absolute;
+    left: -0.5rem;
+    top: -5rem;
+    height: 1150px;
+    width: auto;
+    z-index: 12;
+
+}
+
+.ps-product-description {
+    position: relative;
+    font-family: handjet;
+    background-image: linear-gradient(#080C17, #030B2C);
+    margin-top: -3.5rem;
+    padding: 20px 0px;
+    text-align: right;
+    padding-bottom: 2rem;
+  }
+
+  .ps-gallery-container {
+    text-align: center;
+    background: transparent;
+    padding: 30px;
+    border-radius: 10px; 
+  }
+
+   
+  .main-ps-image img {
+    position: relative;
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: 30%;
+    z-index: 11;
+  }
+
+
+  .ps-thumbnail-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    width: 72%;
+    left: 30%;
+
+  }
+  
+  .ps-thumbnail-wrapper {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; /* Prevents extra images from appearing */
+    width: 75%; /* Adjust this based on your design */
+  
+  }
+  
+  .ps-thumbnail {
+    width: 150px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.6;
+    
+  }
+  
+  .ps-thumbnail.active,
+  .ps-thumbnail:hover {
+    opacity: 1;
+    border: 2px solid white;
+  }
+
+  .ps-background-container {
+    background-image: url('./Assets/psStarBg.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: handjet;
+  }
+
+  .ps-review-page {
+    background: url('./Assets/psReviewBg.png') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }

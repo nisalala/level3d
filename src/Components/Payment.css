@@ -1,0 +1,279 @@
+pre{
+  margin: 0;
+}
+hr{
+  border: 1px solid black;
+  opacity: 100%;
+}
+
+.checkout-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #1a1d2b;
+    color: white;
+  }
+  
+  .progress-tracker {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 20px;
+    background: #30343F;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .progresstxt{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+  }
+  .progress-tracker-sign{
+
+  width: 1230px;
+  margin-left: 70px;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: gray;
+    margin: 0rem 1rem;
+  }
+  
+  .step.active {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .step.completed {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .checkout-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .step-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .right-column {
+    width: 48%;
+    background: #7888B1;
+    border-radius: 25px;
+    color: black;
+  }
+
+  .left-column{
+    width: 50%;
+  }
+
+  .left-column{
+    padding: 0px;
+    margin: 0;
+  }
+
+  .ship-info{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    border-top: 2px solid black;
+    width: 100%;
+    padding: 20px 0px 0px 20px;
+
+  }
+
+  .shipping-address{
+    background: #6B6D8A;
+    color: black;
+    border-radius: 25px;
+    
+  }
+
+  .products{
+ 
+    background: #576792;
+    color: black;
+    border-radius: 25px;
+    padding-bottom: 20px;
+  }
+  
+.s-avatar{
+  width: 60px;
+  height: 60px;
+}
+.checkout-container h2{
+  padding: 20px 20px 0px 20px;
+}
+  .shipping-address{
+    margin-bottom: 20px;
+  }
+  
+  .product-item {
+    padding: 10px 10px 0px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    border-top: 2px solid rgb(0, 0, 0);
+  }
+  
+  .product-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: 1px solid #c3c0c0;
+    margin-right: 2rem;
+  }
+  
+  .total-price {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+width: 90%;
+padding: 10px;
+font-family: Pixelify Sans;
+font-size: 28px;
+    background-color: #B6BDD6;
+    margin-top: 2rem;
+   margin-left: 2rem;
+    font-weight: 200;
+    
+  }
+  .total-price strong{
+    color: #458431;
+    font-weight: 600;
+    font-size: 34px;
+    float: right;
+  }
+  
+  .promo input {
+    border-radius:16px ;
+    background-color: transparent;
+    border: 1.3px solid black;
+    width: 60%;
+    padding: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .promo input::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 50%; /* Firefox */
+  }
+  
+  .promo button {
+    font-family: Pixelify Sans;
+    padding: 0px 16px;
+    cursor: pointer;
+    background-color: #1D2C42;
+    border: 1px solid black;
+    color: white;
+    font-weight: 400;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .order-summary p{
+    font-size: 20px;
+    margin: 20px;
+    margin-bottom: 0;
+  }
+.arrange{
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrange strong{
+  font-size: 38px;
+  color: #2A4A21;
+  margin: 20px;
+}
+  .order-summary h5{
+    
+    margin-right: 0;
+    margin-right: 0;
+    border: 2px solid green;
+  }
+  
+  .proceed-btn {
+    width: 94%;
+    padding: 10px;
+    margin-top: 3rem;
+    margin-left: 20px;
+    background-color: #1D2C42;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-bottom: 0;
+  }
+  
+  .proceed-btn:hover {
+    background-color: #13315e;
+  }
+  
+  .tracker-image {
+    width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  .selection-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .selection-option {
+    padding: 7px;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #C1BCBC;
+  }
+  
+  .selection-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selection-option.selected {
+    border-color: #007bff;
+    background-color: #A1B5DA;
+  }
+  
+  .option-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .option-content p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .option-content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step3-content{
+margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

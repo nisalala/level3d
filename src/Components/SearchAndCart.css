@@ -28,6 +28,7 @@
     font-size: 16px;
     border: 1px solid #ccc;
     background-color: #19191F;;
+    color: white;
     outline: none;
     border-radius: 24px;
   }
@@ -56,4 +57,38 @@
   .product-navbar {
     background-color: rgba(0,0,0,0.5);
     padding-bottom: 2rem;
+  }
+
+  .search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    width: 96%;
+    background: #19191F;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 100;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-suggestion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-suggestion:hover {
+    background: #898989;
+  }
+  
+  .search-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
   }

@@ -6,8 +6,16 @@ import CategorySection from "./CategorySection";
 import Footer from "./Footer";
 import "./ProductPage.css";
 import SearchAndCart from "./SearchAndCart";
+import { useCart } from "./CartContext";
+
+
 
 const SwipableSection = ({ title, items }) => {
+  
+
+  
+  const { addToCart } = useCart();
+
   const [startIndex, setStartIndex] = useState(0);
   const visibleItems = 4; // Number of visible items at once
 
@@ -41,7 +49,7 @@ const SwipableSection = ({ title, items }) => {
           {items.slice(startIndex, startIndex + visibleItems).map((item) => (
             <div key={item.id} className="card">
               <img src={item.image} alt={item.title} className="card-image" />
-              <button className="cart-button"><i className="fas fa-shopping-cart"></i></button>
+              <button className="cart-button" onClick={() => addToCart(item)}><i className="fas fa-shopping-cart"></i></button>
               <div className="card-details">
                 <h3 className="card-title">{item.title}</h3>
                 <div className="purchasebottom">
@@ -66,6 +74,8 @@ const SwipableSection = ({ title, items }) => {
 };
 
 const ProductPage = () => {
+
+  
   const mostPopular = [
     { id: 1, title: "Fortnite", image: "./Assets/image1.png", price: "Free" },
     { id: 2, title: "Minecraft", image: "./Assets/image2.png", price: "$30" },
@@ -81,17 +91,17 @@ const ProductPage = () => {
       image: "./Assets/image4.png",
       price: "$60",
     },
-    { id: 5, title: "Fortnite", image: "./Assets/image5.png", price: "Free" },
-    { id: 6, title: "Minecraft", image: "./Assets/image6.png", price: "$30" },
+    { id: 5, title: "Marvel's Spider-Man 2", image: "./Assets/image5.png", price: "$70" },
+    { id: 6, title: "Baldur's Gate 3", image: "./Assets/image6.png", price: "$60" },
     {
       id: 7,
-      title: "League of Legends",
+      title: "Grand Theft Auto V",
       image: "./Assets/image7.png",
-      price: "Free",
+      price: "$80",
     },
     {
       id: 8,
-      title: "God of War Ragnarök",
+      title: "Elden Rings",
       image: "./Assets/image8.png",
       price: "$60",
     },
@@ -99,41 +109,75 @@ const ProductPage = () => {
 
   const topReleases = [
     {
-      id: 1,
+      id: 11,
       title: "EA SPORTS FC™ 25",
-      image: ".Assets/image5.png",
+      image: "Assets/image11.png",
       price: "$69.99",
     },
-    { id: 2, title: "TankHead", image: ".Assets/image6.png", price: "$14.99" },
+    { id: 12, title: "TankHead", image: "./Assets/image12.png", price: "$14.99" },
     {
-      id: 3,
+      id: 13,
       title: "Kingdom Come: Deliverance II",
-      image: "./Assets/image7.png",
+      image: "./Assets/image13.png",
       price: "$44.99",
     },
     {
-      id: 4,
+      id: 14,
       title: "Farming Simulator 25",
-      image: "./Assets/image8.png",
+      image: "./Assets/image14.png",
       price: "$32.99",
+    },
+    {
+      id: 15,
+      title: "BeamNG.drive",
+      image: "./Assets/image15.png",
+      price: "$8.09",
+    },
+    {
+      id: 16,
+      title: "Sniper Elite: Resistance",
+      image: "./Assets/image16.png",
+      price: "$16.90",
+    },
+    {
+      id: 17,
+      title: "Pax Dei",
+      image: "./Assets/image7.png",
+      price: "$9.66",
+    },
+    {
+      id: 18,
+      title: "Hell Let Loose",
+      image: "./Assets/image8.png",
+      price: "$83.99",
     },
     // Add remaining items...
   ];
 
   const exclusiveOffers = [
     {
-      id: 1,
-      title: "Mortal Kombat™ 1: Khaos Reigns",
-      image: ".Assets/image9.png",
-      price: "$39.99",
-      discount: "-68%",
+      id: 21,
+      title: "Outlast 2",
+      image: "/Assets/ymal1.png", // Replace with actual image
+      price: "$1.19",
+      oldPrice: "$41.99",
+      discount: "-98%",
     },
     {
-      id: 2,
-      title: "Outlast 2",
-      image: ".Assets/image10.png",
-      price: "$1.19",
-      discount: "-88%",
+      id: 22,
+      title: "Crysis Remastered Trilogy",
+      image: "/Assets/ymal2.png",
+      price: "$8.99",
+      oldPrice: "$19.99",
+      discount: "-55%",
+    },
+    {
+      id: 23,
+      title: "Terminator: Dark Fate - Defiance",
+      image: "/Assets/ymal3.png",
+      price: "$9.66",
+      oldPrice: "$12.89",
+      discount: "-25%",
     },
   ];
 

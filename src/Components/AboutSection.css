@@ -1,4 +1,8 @@
 /* About Us Page - Fullscreen Background */
+button{
+  font-family: "Handjet", serif;
+}
+
 body{
   font-family: "Handjet", serif;
 }
@@ -69,11 +73,12 @@ body{
   }
   
   .about-btn{
-    font-family: "Gluten", serif;
+    font-family: handjet;
+    font-weight: 500;
     background-color: #5587A9;
     border-radius: 50px;
     padding: 7px 27px;
-    font-size: 24px;
+    font-size: 28px;
     border: none;
   }
 
@@ -146,6 +151,7 @@ body{
 }
 
 .contact-section button {
+  font-family: handjet;
   font-size: 24px;
   font-weight: bold;
   border-radius: 26px;

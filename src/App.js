@@ -12,6 +12,13 @@ import ContactUs from './Components/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SearchResults from './Components/SearchResult';
 import ProductDetail from './Components/ProductDetail';
+import PsDetail from './Components/PsDetail';
+import Payment from './Components/Payment';
+import Esewa from './Components/Esewa';
+import PaymentSuccess from './Components/PaymentSuccess';
+import CartPage from './Components/CartPage';
+import Paymentconfirm from './Components/Paymentconfirm';
+
 
 
 function Home() {
@@ -36,7 +43,13 @@ function App() {
         <Route path="/auth" element={<AuthPage />} /> 
         <Route path="/search" element={<SearchResults />} />
         <Route path="/product" element={<ProductDetail />} />  
-        {/* <Route path="/cart" element={<CartPage />} /> */}
+        <Route path="/product/ps" element={<PsDetail />} />  
+        <Route path="/payment" element={<Payment />} />  
+        <Route path="/esewa" element={<Esewa />} />  
+        <Route path="/payment-success" element={<PaymentSuccess />} />  
+        <Route path="/cart" element={<CartPage />} />  
+        <Route path="/payment-confirm" element={<Paymentconfirm />} />  
+
 
       </Routes>
       {/* <Footer /> */}
