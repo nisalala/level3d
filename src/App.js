@@ -18,6 +18,8 @@ import Esewa from './Components/Esewa';
 import PaymentSuccess from './Components/PaymentSuccess';
 import CartPage from './Components/CartPage';
 import Paymentconfirm from './Components/Paymentconfirm';
+import LoginPage from "./Components/AuthPage/LoginPage";
+import SignUpPage from "./Components/AuthPage/SignUpPage";
 
 
 
@@ -41,6 +43,8 @@ function App() {
         <Route path="/about" element={<AboutSection />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/auth" element={<AuthPage />} /> 
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/product" element={<ProductDetail />} />  
         <Route path="/product/ps" element={<PsDetail />} />  

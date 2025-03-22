@@ -24,7 +24,7 @@ const NavigationBar = () => {
     // You can add login logic here if necessary
 
     // After login, navigate to the AuthPage
-    navigate("/auth");
+    navigate("/login");
   };
 
   
